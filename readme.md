@@ -2,7 +2,7 @@ This small program processes a CSV text file to ensure that any quotes appearing
 It will remove quotes between quotes, Input:"Sea"n"  Output:"Sean"
 
 It also handles any whitespace characters such as carrige returns, tabs, or line feed characters that fall between qualifiers (quotes).
-On top of random concealed quotes, the files I was processing would have random EOL characters as well. Sometimes a TAB and other times a NL and/or CR+NL. These crazy files came from a well known leader in the payments and banking industry. Having supported our integration with thier systems for years, I was not surprised.
+On top of random concealed quotes, the files I wrote this for would have random EOL characters as well. Sometimes a TAB and other times a NL and/or CR+NL. These crazy files came from a well known leader in the payments and banking industry. Having supported an integration with thier systems for years, I was not surprised.
 
 I wrote it to prep files for SQL Server Integration Services (SSIS). Even though SSIS and powershell can be custom-coded to handle these situations I ran into difficult edge cases and significant performance issues with them.
 
